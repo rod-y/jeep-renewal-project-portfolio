@@ -1,0 +1,292 @@
+/* sub02_wrangler.css */
+
+
+div.mnWrap {}
+
+div.mnWrap>main {
+  position: relative;
+}
+
+div.mnWrap .image {
+  background-position: center;
+  background-size: cover;
+}
+
+div.mnWrap>main>.main {
+  height: 100vh;
+  background-image: url(../image/sub02_Wrangler/wrangler_main.jpg);
+}
+
+div.mnWrap>article {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+div.mnWrap>article>.wrangler {
+  background-image: url(../image/sub02_Wrangler/wrangler.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 1030px;
+  height: 95px;
+  margin: 0 auto;
+}
+
+div.mnWrap>article>.segment {
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 5px;
+}
+
+div.mnWrap>article>.segment>h3 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #fff;
+  line-height: 80px;
+}
+
+div.mnWrap>article>.segment>h3>span {
+  font-weight: 900;
+  font-size: 48px;
+  color: #edad01;
+  line-height: 80px;
+}
+
+
+/* color */
+div.color {
+  height: 100vh;
+  background-image: url(../image/sub02_Wrangler/color_bgi-1.jpg);
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+div.color>header {}
+
+div.color>header>h3 {}
+
+div.color>section {
+  width: 1080px;
+  margin: 0 auto;
+overflow: hidden;
+}
+div.color>section>.imgWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+div.color>.overlay{
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: -1;
+}
+div.color>.overlay.visible{
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden;
+}
+div.color>.overlay.visible>.image{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+div.color>section>.imgWrap>.image {
+  width: 1080px;
+  height: 600px;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.color>section>.imgWrap>.yellow {
+  background-image: url(../image/sub02_Wrangler/wrangler_yellow.png);
+}
+div.color>section>.imgWrap>.white {
+  background-image: url(../image/sub02_Wrangler/wrangler_white.png);
+}
+div.color>section>.imgWrap>.red {
+  background-image: url(../image/sub02_Wrangler/wrangler_red.png);
+}
+div.color>section>.imgWrap>.black {
+  background-image: url(../image/sub02_Wrangler/wrangler_black.png);
+}
+
+div.color>section>.btns {
+  text-align: center;
+  margin-top: 40px;
+  position: absolute;
+}
+
+div.color>section>.btns>button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+div.color>section>.btns>.ye {
+  background-color: #edad01;
+}
+
+div.color>section>.btns>.r {
+  background-color: #e90000;
+}
+
+div.color>section>.btns>.bc {
+  background-color: #1e1e1e;
+}
+
+/* about */
+div.about {
+  height: 300vh;
+  padding: 0;
+}
+div.about>section {
+  width: 100%;
+}
+div.about>section>article {
+  height: 100vh;
+  position: relative;
+}
+div.about>section>article>.image {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: 100%;
+}
+
+div.about>section>article>.fear {
+  background-image: url(../image/sub02_Wrangler/wrangler01.jpg);
+}
+div.about>section>article>.zone {
+  background-image: url(../image/sub02_Wrangler/wrangler02-1.jpg);
+}
+div.about>section>article>.engine {
+  background-image: url(../image/sub02_Wrangler/wrangler03-1.jpg);
+}
+div.about>section>article>.segment {
+  width: 550px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: right;
+
+
+}
+div.about>section>article:nth-of-type(1)>.segment {
+  left: 100px;
+}
+div.about>section>article:nth-of-type(3)>.segment {
+  left: 100px;
+}
+div.about>section>article:nth-of-type(2)>.segment {
+  right: 100px;
+  text-align: left;
+}
+div.about>section>article>.segment>h3 {}
+
+div.about>section>article>.segment>p {}
+
+
+
+/* wrangler */
+div.wrangler{
+  height: 100vh;
+}
+
+div.wrangler>header {}
+
+div.wrangler>section {
+
+}
+
+div.wrangler>section>article {
+
+}
+
+div.wrangler>section>article>.flipWrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+div.wrangler>section>article>.flipWrap>.flip{
+  width: 250px;
+  height: 580px;
+  position: relative;
+  perspective: 600px;
+
+}
+div.wrangler>section>article>.flipWrap>.flip>div {
+width: 100%;
+height: 100%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+top: 0;left: 0;
+
+
+transition: all 1.2s ease;
+
+}
+div.wrangler>section>article>.flipWrap>.flip>.front{
+  z-index:1;
+}
+div.wrangler>section>article>.flipWrap>.flip>.back{
+  z-index:0;
+}
+
+
+div.wrangler>section>article:hover>.flipWrap>.flip>.front{
+  transform: rotateY(-180deg);
+  transition: all 1.2s ease;
+  z-index:0;
+}
+div.wrangler>section>article:hover>.flipWrap>.flip:nth-of-type(2)~.flip>.front{
+  transform: rotateY(180deg);
+
+}
+div.wrangler>section>article:hover>.flipWrap>.flip>.back{
+  transform: rotateY(-180deg);
+  transition: all 1.2s ease;
+  z-index:1;
+}
+div.wrangler>section>article:hover>.flipWrap>.flip:nth-of-type(2)~.flip>.back{
+  transform: rotateY(180deg);
+
+}
+
+div.wrangler .f1 {background-image: url(../image/sub02_Wrangler/wangler2_08.jpg);}
+div.wrangler .f2 {background-image: url(../image/sub02_Wrangler/wangler2_13.jpg);}
+div.wrangler .f3 {background-image: url(../image/sub02_Wrangler/wangler2_10.jpg);}
+div.wrangler .f4 {background-image: url(../image/sub02_Wrangler/wangler2_16.jpg);}
+
+
+div.wrangler .b1 {background-image: url(../image/sub02_Wrangler/WW_16.jpg);}
+div.wrangler .b2 {background-image: url(../image/sub02_Wrangler/WW_10.jpg);}
+div.wrangler .b3 {background-image: url(../image/sub02_Wrangler/WW_13.jpg);}
+div.wrangler .b4 {background-image: url(../image/sub02_Wrangler/WW_08.jpg);}

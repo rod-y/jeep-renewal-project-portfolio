@@ -1,0 +1,122 @@
+/* sub01_model.css */
+
+body{
+  background-color: #000;
+  background-image: url(../image/sub01_model/smoke_bgi.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+div.mnWrap{}
+div.mnWrap>main{}
+div.mnWrap>main>.image{
+  background-image: url(../image/sub01_model/model_main.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* content  */
+
+div.content{
+  height: 100vh;
+
+}
+
+div .image{
+  text-indent: -9999px;
+}
+div.content>section{
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div.content>section>hr{
+  width: calc(5% - 20px);
+  border: 0;
+  height: 1px;
+  background-color: #edad01;
+}
+div.content>section>header{
+  width: calc(40% - 20px);
+  text-align: left;
+}
+
+div.content>section>header>h2{
+    transition-property: color ;
+    transition-duration: .5s;
+    letter-spacing: 3px;
+}
+
+div.content>section:hover>header>h2{
+  color: #edad01;
+}
+div.content:nth-of-type(2)~.content>section>header>h2{
+  padding-top: 30px;
+}
+div.content:nth-of-type(even)>section>header{
+  text-align: right;
+}
+div.content>section>.segment{}
+div.content>section>article{
+  width: 550px;
+
+}
+div.content>section>article>.image{
+  width: calc((100vw - 1080px) / 2 + 360px);
+  height: 80vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+div.content>section>header>p{
+  height: 0px;
+  color: transparent;
+  overflow: hidden;
+  transition-property: height, color;
+  transition-duration: .5s;
+}
+div.content>section:hover>header>p{
+  height: 120px;
+  color: #b68400;
+}
+
+div.content>section>header>button{
+    opacity: 0;
+    transition-property: opacity, color, border-bottom
+    transition-duration: .5s;
+}
+div.content>section:hover>header>button{
+  opacity: 1;
+}
+div.content>section>header>button:hover{
+    color : #edad01;
+      border-bottom: 1px solid #edad01;
+
+}
+
+
+div.gdche>section>header:hover>p{
+  height: 120px;
+  color: #b68400;
+}
+div.gdche>section>article>.image{
+  background-image: url(../image/sub01_model/grand_cherokee.png);
+}
+div.che>section>article>.image{
+  background-image: url(../image/sub01_model/cherokee.png);
+  float: right;
+}
+div.com>section>article>.image{
+  background-image: url(../image/sub01_model/compass.png);
+}
+div.rene>section>article>.image{
+  background-image: url(../image/sub01_model/renegade.png);
+  float: right;
+}
+div.wran>section>article>.image{
+  background-image: url(../image/sub01_model/wrangler.png);
+}

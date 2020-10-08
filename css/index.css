@@ -1,0 +1,147 @@
+/* index.css */
+
+
+/* hdrWrap */
+
+div.hdrWrap{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  width: 100%;
+  padding: 30px 0 0 0;
+  z-index: 9999;
+}
+div.hdrWrap h1{
+  margin: 0 auto;
+  width: 128px;
+  height: 30px;
+}
+div.hdrWrap>.navWrap{
+  width: 100%;
+}
+div.hdrWrap>.navWrap>hr{
+  height: 1px;
+  border: 0;
+  background-color: #fff;
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+div.hdrWrap>.navWrap>ul{
+  width: 1080px;
+  margin: 0 auto;
+  display:flex;
+  justify-content: flex-end;
+}
+div.hdrWrap>.navWrap>ul>li{
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+  height: 40px;
+  margin-left: 30px;
+  border-bottom: 2px solid rgba(255,255,255, 0);
+
+  transition-property: border-bottom, color;
+  transition-duration: .5s;
+}
+div.hdrWrap>.navWrap>ul>li:hover{
+  color: #edad01;
+  border-bottom: 2px solid #edad01;
+}
+
+/* mnWrap */
+
+div.mnWrap{
+
+}
+div.mnWrap>main{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+div.mnWrap>main>video{
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+}
+
+
+/*  all content style */
+
+div.content{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+div.content>section{
+    padding: 40vh 0;
+    height: 100vh;
+}
+div.content>section>header>h2{
+    letter-spacing: 6px;
+}
+div.content>section>header>button{
+  letter-spacing: 2px;
+}
+
+
+/* content model */
+
+div.model{
+  background-image: url(../image/index/index_02.jpg);
+}
+/* content wrangler */
+
+div.wrangler{
+  background-image: url(../image/index/index_04.jpg);
+}
+/* content story */
+
+div.story{
+  height: 100vh;
+    background-image: url(../image/index/index_03.jpg);
+}
+
+
+div.ftrWrap{
+  padding: 80px 0;
+}
+div.ftrWrap>footer{
+  width: 1080px;
+  margin: 0 auto;
+}
+div.ftrWrap>footer>hr{
+  width: 1080px;
+  background-color: #fff;
+}
+div.ftrWrap>footer>h1{
+  text-align: center;
+  margin-top: 40px;
+}
+div.ftrWrap>footer>ul{
+  display: flex;
+  justify-content: center;
+}
+div.ftrWrap>footer>ul>li{
+  font-size: 36px;
+  color: #fff;
+  line-height: 40px;
+  margin: 0 10px;
+  margin-top: 40px;
+
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+div.ftrWrap>footer>ul>li:hover{
+  color: #edad01;
+}
+div.ftrWrap>footer>p{
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+Wrap>footer>p{}

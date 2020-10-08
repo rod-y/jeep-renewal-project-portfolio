@@ -1,0 +1,186 @@
+/* sub03_story.css */
+body{
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../image/sub03_story/jeep_story_bgi_ver.05.jpg);
+  background-position: center;
+  background-size:100%;
+  background-attachment: fixed;
+}
+
+/* main image */
+
+div.mnWrap{}
+div.mnWrap>main{}
+div.mnWrap>main>.image{
+  height: 100vh;
+  background-image: url(../image/sub03_story/jeep_story_main.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* content */
+
+div.content{
+  height: 100vh;
+  /* background-image: url(../image/sub03_story/jeep_story_bgi_ver.05.jpg);
+  background-position: center;
+  background-size: cover; */
+}
+div.content>header{}
+div.content>header>h2{}
+div.content>section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+div.content>section>article{
+  display: flex;
+}
+div.content>section>.head{}
+div.content>section>.art{
+  position: relative;
+}
+div.content>section>article>header{}
+div.content>section>article>header>h2{
+  font-size: 100px;
+  width: 30vh;
+  line-height: 55vh;
+  transform: rotate(90deg);
+  -webkit-text-stroke: 2px #edad01;
+  color: transparent;
+  position: relative;
+  left: -100px;
+  opacity: 0;
+}
+
+div.content>section>article>header>hr{
+  width: calc(10% - 20px);
+}
+div.content:nth-of-type(even)>section>article>header>h2{
+  transform: rotate(-90deg);
+}
+div.content>section>article>.segment{
+  width: 360px;
+  height: 40vh;
+  position: absolute;
+  z-index: 9999;
+  right:350px;
+  bottom: 0px;
+  top: 0;
+  margin: auto;
+}
+div.content:nth-of-type(odd)>section>article>.segment{
+  left: 350px;
+}
+div.content>section>article>.segment>p{
+  text-align: center;
+  width: 350px;
+  height: 40vh;
+  background-color: rgba(237, 173, 1, 0.7);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0;
+  position: absolute;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+
+  transition-property: opacity;
+  transition-duration: .7s;
+}
+
+
+
+div.content>section:hover>article p{
+  opacity: 1
+
+}
+
+div.content>section:hover>article p::after{
+    height: 90%;
+    transition-property: height;
+    transition-duration: 1.2s;
+}
+div.content>section:hover>article p::before{
+    width: 90%;
+    transition-property: width;
+    transition-duration: 1.2s;
+}
+
+
+div.content p::before, div.content p::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+}
+
+div.content p::before {
+    border-top: 1px solid rgb(255, 225, 135) ;
+    border-bottom: 1px solid rgb(255, 225, 135);
+    width: 0;
+}
+div.content p::after{
+    border-left: 1px solid rgb(255, 225, 135);
+    border-right: 1px solid rgb(255, 225, 135);
+    height: 0;
+}
+
+
+
+div.s1940 p{
+  padding: 120px 40px;
+}
+div.s1960 p{
+  padding: 120px 40px;
+}
+div.s1980 p{
+  padding: 90px 40px;
+}
+div.s2000 p{
+  padding: 120px 40px;
+}
+div.s2010 p{
+  padding: 90px 40px;
+}
+
+
+div.content>section>article>.image{
+  width: 700px;
+  height: 55vh;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 1);
+
+
+  transition-property: width,box-shadow;
+  transition-duration: .5s;
+
+}
+div.content>section:hover>article>.image{
+  width: 550px;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0);
+}
+
+div.s1940 .image{
+background-image: url(../image/sub03_story/history_03.jpg);
+}
+div.s1960 .image{
+background-image: url(../image/sub03_story/history_07.jpg);
+}
+div.s1980 .image{
+  background-image: url(../image/sub03_story/history_10.jpg);
+}
+div.s2000 .image{
+background-image: url(../image/sub03_story/history_12.jpg);
+}
+div.s2010 .image{
+  background-image: url(../image/sub03_story/history_14.jpg);
+}
